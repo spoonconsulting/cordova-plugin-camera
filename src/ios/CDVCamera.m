@@ -209,7 +209,7 @@ static NSString* toBase64(NSData* data) {
             [self displayPopover:pictureOptions.popoverOptions];
             self.hasPendingOperation = NO;
         } else {
-            cameraPicker.modalPresentationStyle = UIModalPresentationCurrentContext;
+            cameraPicker.modalPresentationStyle = UIModalPresentationOverFullScreen;
             [self.viewController presentViewController:cameraPicker animated:YES completion:^{
                 self.hasPendingOperation = NO;
             }];
